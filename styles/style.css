@@ -20,6 +20,11 @@ h2 {
     text-align: center;
 }
 
+p,
+li {
+    text-align: center;
+}
+
 /* navBar */
 .container {
     width: 90%;
@@ -55,6 +60,10 @@ h2 {
 
 .span {
     color: rgb(255, 84, 0);
+}
+
+.logo img {
+    width: 50px;
 }
 
 /* hero style */
@@ -97,12 +106,17 @@ h2 {
     backdrop-filter: blur(2px);
 }
 
+
 input,
 select {
     width: 175px;
     height: 50px;
     border-radius: 8px;
     border: none;
+}
+
+img {
+    width: 100%;
 }
 
 .btn-primary {
@@ -117,4 +131,143 @@ select {
     color: white;
     cursor: pointer;
     font-weight: 700;
+}
+
+.text-content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: space-between;
+}
+
+.popular-section {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-content p,
+li {
+    text-align: left;
+}
+
+.text-content li {
+    margin-left: 30px;
+}
+
+
+
+.your-destination img {
+    width: 100%;
+    filter: brightness(70%);
+    height: 400px;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    display: grid;
+    margin: 1rem 0;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.row-2 {
+    grid-template-columns: 0.8fr 1fr 0.6fr;
+}
+
+.row-3 {
+    grid-template-columns: 0.75fr 1.25fr;
+}
+
+.country-card {
+    position: relative;
+}
+
+.country {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+
+.bar {
+    display: none;
+}
+
+/* responsive 
+ */
+
+@media screen and (max-width:576px) {
+    .nav-options {
+        display: none
+    }
+
+    .bar {
+        display: block;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .logo h2 {
+        font-size: 28px;
+    }
+
+    .hero-title-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-title-content p {
+        font-size: 14px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .hero-description {
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+    }
+
+    .hero-description input,
+    .hero-description select,
+    .hero-description button {
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .text-content {
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .popular-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .row-1,
+    .row-2,
+    .row-3 {
+        grid-template-columns: 1fr;
+    }
+
 }
