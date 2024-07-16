@@ -206,7 +206,7 @@ li {
 /* responsive 
  */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:600px) {
     .nav-options {
         display: none
     }
